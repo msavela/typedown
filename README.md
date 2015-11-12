@@ -6,19 +6,19 @@ Typedown editor.
 
 Install all the necessary dependencies.
 
-  $ npm install
+ > $ npm install
 
 ## Development
 
 Development mode user `webpack-dev-server` to serve content and rebuild the `bundle.js`.
 
-  $ npm start
+ > $ npm start
 
 ## Distribution
 
 Distribution target directory is `dist/`.
 
-  $ npm run build
+ > $ npm run build
 
 ## License
 
