@@ -1,0 +1,67 @@
+@import "~codemirror/lib/codemirror.css";
+
+@import "themes/light.scss";
+@import "themes/dark.scss";
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.CodeMirror {
+  width: 100% !important;
+	height: 100% !important;
+
+	color: #666 !important;
+
+	font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier !important;
+	font-size: 1em;
+
+  .CodeMirror-lines {
+    margin: 50px 0;
+  }
+
+  .CodeMirror-sizer {
+    width: 50%;
+    margin: 0 auto !important;
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 20px;
+
+  z-index: 99;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+$icon-size: 20px;
+
+span[class^='icon-'],
+span[class*=' icon-'] {
+    display: inline-block;
+    background-size: contain;
+    width: $icon-size;
+    height: $icon-size;
+}
+
+span.icon-theme { background-image: url(../images/theme.svg); }
+span.icon-fullscreen { background-image: url(../images/fullscreen.svg); }
+span.icon-export { background-image: url(../images/export.svg); }

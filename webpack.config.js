@@ -3,7 +3,7 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './app/app',
+  entry: './app/index',
   output: {
       path: path.join(__dirname, 'dist'),
       filename: 'bundle.js'

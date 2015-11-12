@@ -1,0 +1,45 @@
+.cm-s-light {
+
+  background-color: #fff;
+
+  &.CodeMirror-empty {
+  	color: #c9c9c9 !important;
+  }
+
+  .CodeMirror-selected {
+  	background: rgba(21, 170, 254, .2) !important;
+  }
+
+  .CodeMirror-cursor {
+  	border-left: 3px solid rgba(21, 170, 254, 1) !important;
+  }
+
+  .cm-strong {
+  	color: #111;
+  }
+
+  .cm-quote {
+  	color: rgba(0, 0, 0, .3) !important;
+  }
+
+  .cm-header {
+  	color: rgba(21, 170, 254, 1) !important;
+  }
+
+  .cm-link {
+  	color: rgba(21, 170, 254, 1) !important;
+  }
+
+  .cm-url {
+  	color: #E84545 !important;
+  }
+
+  .cm-comment {
+  	color: #903749 !important;
+  }
+
+  .cm-variable-2 {
+  	color: #655989 !important;
+  }
+
+}
