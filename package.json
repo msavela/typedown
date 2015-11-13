@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --config webpack.dist.config.js"
+    "build": "webpack --config webpack.dist.config.js",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "babel-core": "^6.1.2",
