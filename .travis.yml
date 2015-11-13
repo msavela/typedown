@@ -1,12 +1,22 @@
 language: node_js
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
-
 node_js:
-  - "5.0"
+- '5.0'
+deploy:
+  access_key_id:
+    secure: sBMC/Z1RIOKF5WoEtwOwDUGz4wIE0lTfASbgn6l4yfBOGLsjidLjsmb9Zi+OJqZM892cpe7KkLyha4ootB7IdVkVyGe2+8egkDzT9htkOj3floGr4IuQqKY+4GUyOsyEejAlZDNUSTDQYV6AWOVgmq0t57Y9wpjZ4KpeuFp+NrXitUnERiBwaJs+0ecxnYJJAaXLO6p1YVs6MEJq139IcYRLmdSX/GjAc0+o0eNcZrsbYhg41z1qUi2y4K93egDp4DVNOF4KxuMuyA5XM6pW13cBYzOyWyM/JjPYfHUHWxQOc4lbt2cwk8L9YMWbePEInaaHliMH6wxp+DhFXQ/9DnblA9UBbo8fTIbttp38s1oTve3G3BUZkv2CL2bDOrCxeIjoCpsEvWg47E2yUb8BxuAL2RdSIVynD0bfbqoPSp1/2GmXmNGF2WWKuybtrsuslbXY5lMjCr7EN53qkAX/yJyeCJMs2S1SRaGdQl0SGIJk46Ezm9ia5zAeulo+TwZ6wxWhsNuxglkpF5qwH05gdswWciX2pqlijDmjjtl6V2SX5ss0Nc7R9sHUlK/4D+Bmvq02kc2K3VAdXRt6FKKsplrzV8Epg98DdBSsKl8jDtg3O6+G/v/tbw3aY/ur5wHH18nposmSsSQKnBlkwtS4dRQv+y0oiKiDR7GhK8DsZYQ=
+  secret_access_key:
+    secure: e9BV5RCKzl5HEPKvF67XR4OTI57omkBBtwGfVajnlcxG6nO5w08NmvetZNOgyUn4pFTasCLQwRWuh/qbCH0qRnnN5cVpLNywStERncN2lH0hxitvEoLQRzQxZYBNLvx+JkFBRCrlpzZJIyGS9qGXLPdm472nt8+u9Z2Yp49aFz3t3y4i8ZZKNmnRNaoQvKy61Mo2rcXZLdaE+9pQCiam8zSK1ZYRe9lDJxnxe6f3KDa7H0N0rIre/z3qTK+BUgRkEpeIBj4CfvzwdVyofWzVuTQcB7JVtIWsJ3FxcH6uLjFS5xOj4sa2TXiHfl2qwUq9vIQ4EwzxzEf9KCV+/xN5qmJIXvxSCTcpiFAYkXuc7PRKeT8bLH15MFKHQmrK2usC8ZFZo4kRQAJZg3sYtvDgXNI9bYJYVkQob5LXz4ft9lD9xevrnfWgVusHAv/VsHVKok+/Al9ONbAEGUp6jeefq59VetlTLsfx682d1vDixjig5yFWOQJ/I2oObLsTTnFXTiYSU+PdSUT43F2MqN/YxN3TkthEhOqRRUXYqMhcbcdKrz6Y8kczpKlDgUTrRmAAglVTUztNzZZSD216Bmt2664NQS9R/2/LThZeNCTqXoS/fwuPqNHCJp0PPedGSTlV+zThjbN5rfaWexjOtuEypdYTR68NIl14Mbx5jynyteM=
+  bucket: typedown.co
+  region: eu-central-1
+  skip_cleanup: true
+  acl: public_read
+  local_dir: dist
+  detect_encoding: true
